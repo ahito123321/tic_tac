@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_curs",
+  "version": "1.0.0",
+  "description": "server for tic&tac game for neural network",
+  "main": "StartServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node StartServer.js",
+    "dev": "nodemon StartServer.js"
+  },
+  "author": "HoollywooD",
+  "license": "MIT",
+  "devDependencies": {
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "brain.js": "^1.4.2",
+    "express": "^4.16.4",
+    "node": "^11.0.0"
+  }
+}

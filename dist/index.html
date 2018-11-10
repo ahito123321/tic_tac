@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Mali:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TIC&TAC</title>
+</head>
+<body>
+    <div id="app">
+        <div class="wrap-overlay-choice">
+            <div class="wrap-overlay-choice-window">
+                <div class="wrap-overlay-choice-window-x wrap-overlay-choice-window-x-active">X</div>
+                <div class="wrap-overlay-choice-window-0">0</div>
+                <div class="wrap-overlay-choice-window-text">Choose which side<br />you're on!</div>
+                <input class="wrap-overlay-choice-window-input" type="text" placeholder="YOUR NICKNAME" value="DEFAULT" required>
+                <i class="fas fa-arrow-right wrap-overlay-choice-window-arr"></i>
+            </div>
+        </div>
+        <div class="wrap-overlay-loading">
+            L
+            <div class="wrap-overlay-loading-card">
+                <p class="wrap-overlay-loading-card-x">X</p>
+                <p class="wrap-overlay-loading-card-0">0</p>
+            </div>
+            ADING
+            <div class="wrap-overlay-loading-additional-info">Start application</div>
+        </div>
+        <header class="wrap-info filter-blur5">
+            <section class="wrap-info-stats">
+                <h4 class="color-blue">Some statistics:</h4>
+                <div class="wrap-info-stats-block">
+                    <div>Now playing - <span>DEFAULT</span></div>
+                    <div>All games - <span>0</span></div>
+                    <div>Bot wins - <span>0</span></div>
+                    <div>The number of training data - <span>0</span></div>
+                </div>
+            </section>
+            <section class="wrap-info-logo">
+                <h1><span>TIC</span>&<span>TAC</span></h1>
+                <button class="wrap-info-btn-end-game">Finish the game</button>
+            </section>
+            <section class="wrap-info-log">
+                <h4 class="color-red">Some log:</h4>
+                <textarea name="game-log" id="game-log" ></textarea>
+            </section>
+        </header>
+        <section class="wrap-playing-field filter-blur5">
+            <div class="wrap-playing-field-x filter-blur15">X</div>
+            <div class="wrap-playing-field-0 filter-blur15">0</div>
+            <table class="wrap-playing-field-table">
+                <caption>Playing field</caption>
+                <thead>
+                    <tr>
+                        <th>-</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="td-th">0</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">1</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">2</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">3</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">4</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">5</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">6</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">7</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">8</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="td-th">9</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+     <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
